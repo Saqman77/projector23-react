@@ -1,0 +1,199 @@
+.navbb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(0);
+  transition: all, ease-in-out .5s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: #c4adf08a; */
+  /* box-shadow: 0px 1px 5px 1px; */
+}
+
+nav
+{
+  position: relative;
+  width: 100%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  /* backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); */
+}
+
+
+.navbar .logo {
+  width: 125px;
+  height: 114px;
+  position: relative;
+}
+.navbar .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+.navbar ul li {
+  list-style-type: none;
+  color: #7f3e98cc;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* transition: color 0.3s ease-in-out; */
+  /* overflow: hidden; */
+}
+.navbar ul li a,
+.navbar ul li a span {
+  color: #7f3e98cc;
+  font-family: Outfit;
+  font-size: 17.7px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  /* transition: color 0.3s ease-in-out; */
+  
+}
+/* .navbar ul li a span {
+  color: #f7f7f7;
+  position: absolute;
+  transform: translateY(100%);
+  left: 0;
+  transition: 0.3s ease-in-out;
+} */
+/* .navbar ul li a:hover span,
+.navbar ul li:nth-child(1) a span {
+  transform: translateY(0);
+} */
+.homepage .navbar {
+  padding: 0 1em;
+}
+
+.navbar.pc {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.navbar.mobile {
+  display: none;
+}
+.navbar.mobile .ham {
+  width: 50px;
+  height: 50px;
+}
+.navbar.mobile .btn_ham {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1em;
+
+}
+@media (max-width: 850px) {
+  .navbar.pc {
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+  .navbar.mobile {
+    display: flex;
+    width: 100%;
+  }
+  .navbar.mobile {
+    inset: 0;
+    position: relative;
+    height: max-content;
+    z-index: 9999;
+    background: padding-box;
+    background: #c4adf0;
+  }
+  .navbar.mobile nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  .navbar.mobile ul {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    display: flex;
+    align-items: flex-end;
+    background: #4a90e226;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    height: 248.52px;
+    /* background: linear-gradient(0deg, #4a90e226 0%, rgba(74, 144, 226, 0.15) 100%), linear-gradient(0deg, rgba(245, 245, 245, 0.25) 0%, rgba(245, 245, 245, 0.25) 100%), linear-gradient(180deg, #D3B8E6 0%, #4A90E2 36.5%, #F6F5F5 72.5%, #7F3E98 100%); */
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* background: linear-gradient(111deg, rgba(255, 255, 255, 0.28) 5.54%, rgba(255, 255, 255, 0.12) 93.74%); */
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: #c4adf0e0;
+    /* opacity: 0.5; */
+    /* background-color: transparent; */
+  }
+  .navbar.mobile.closed ul {
+    height: 0;
+  }
+  .navbar.mobile ul li {
+    list-style-type: none;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    opacity: 1;
+    margin: 1em;
+  }
+  .navbar .logo {
+    width: 85px;
+    height: auto;
+    position: relative;
+  }
+}
+
+/* responsive  ================================= responsive */
+@media (min-width:2000px){
+ .navbar .logo {
+    width: 150px;
+    height: 160px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 26px;
+  }
+}
+@media (min-width:1500px){
+ .navbar .logo {
+    width: 140px;
+    height: 150px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 24px;
+  }
+}
+@media (min-width:1000px){
+ .navbar .logo {
+    width: 120px;
+    height: 120px;
+  }
+  .navbar ul li a, .navbar ul li a span {
+    font-size: 20px;
+  }
+}

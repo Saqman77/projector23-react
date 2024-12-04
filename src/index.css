@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body { */
+  /* background-color: #c4adf0;
+  background: linear-gradient(
+      0deg,
+      rgba(74, 144, 226, 0.15) 0%,
+      rgba(74, 144, 226, 0.15) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(245, 245, 245, 0.25) 0%,
+      rgba(245, 245, 245, 0.25) 100%
+    ),
+    linear-gradient(
+      180deg,
+      #d3b8e6 0%,
+      #4a90e2 36.5%,
+      #f6f5f5 72.5%,
+      #7f3e98 100%
+    );
+  /* padding: 0 60px; */
+/* } */ 
+body{
+  background-image: url("../src/assets/images/background/works-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top;}
+@media (max-width: 800px) {
+  body{
+    background-image: url("../src/assets/images/background/works-bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top;
+  }
+}
+a {
+  text-decoration: none;
+}
+/* 
+@media (min-width: 1024px) {
+  body {
+      font-size: 18px;
+  }
+
+  h1 {
+      font-size: 2.5rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
+
+  h3 {
+      font-size: 1.75rem;
+  }
+
+  p {
+      font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  body {
+      font-size: 24px;
+  }
+
+  h1 {
+      font-size: 3rem;
+  }
+
+  h2 {
+      font-size: 2.5rem;
+  }
+
+  h3 {
+      font-size: 2rem;
+  }
+
+  p {
+      font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  body {
+      font-size: 36px;
+  }
+
+  h1 {
+      font-size: 4rem;
+  }
+
+  h2 {
+      font-size: 3.5rem;
+  }
+
+  h3 {
+      font-size: 3rem;
+  }
+
+  p {
+      font-size: 1.5rem; 
+  }
+}
+
+@media (min-width: 5120px) {
+  body {
+      font-size: 40px;
+  }
+
+  h1 {
+      font-size: 5rem;
+  }
+
+  h2 {
+      font-size: 4.5rem;
+  }
+
+  h3 {
+      font-size: 4rem;
+  }
+
+  p {
+      font-size: 1.75rem;
+  }
+} */

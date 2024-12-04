@@ -1,0 +1,75 @@
+.back_botton {
+  width: max-content;
+  border-radius: 100px;
+  /* opacity: 0.5; */
+  /* background: #ffffff80; */
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  font-family: Outfit;
+  font-size: 2.7vw;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 82.5px;
+  border: 0.825px solid #fff;
+  background: linear-gradient(156deg, #7f3e989e 43%, #b3effeb5 84%);
+  -webkit-text-fill-color: #fff;
+  color: #fff !important;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 500;
+  padding: 2.6vw 3.9vw;
+}
+.back_botton::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  background: #ffffff80;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5;
+  /* z-index: 0.4; */
+}
+.back_botton svg {
+  width: 100%;
+  margin-right: 0.57vw;
+}
+
+
+
+/* @media (min-width:2000px) {
+  .back_botton {
+    font-size: 40px;
+  }
+  .back_botton svg {
+    width: 90px;
+  }
+}
+
+@media (min-width:1500px) and (max-width:1999px){
+  .back_botton {
+    font-size: 34px;
+  }
+  .back_botton svg {
+    width: 80px;
+  }
+} */
+
+/* @media (min-width:1050px) and (max-width:1449px){
+  .back_botton {
+    font-size: 32px;
+  }
+  .back_botton svg {
+    width: 70px;
+  }
+} */
