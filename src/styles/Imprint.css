@@ -139,6 +139,13 @@
   /* height: 70px; */
   justify-content: space-between;
   /* padding: 0 1.2em; */
+  transition: all 0.1s ease-in-out;
+}
+
+.Imprint .top_tbn:hover{
+  transition: all 0.1s ease-in-out;
+  -webkit-text-fill-color: rgba(161, 231, 249, 0.9);
+  color: rgba(161, 231, 249, 0.9);
 }
 
 .Imprint ul {

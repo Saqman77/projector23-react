@@ -40,7 +40,9 @@ const Navbar = () => {
       if (!headerElement) return;
 
       // Update backdrop blur
-      if (currentScrollPosition === 0) {
+      if(window.innerWidth > 1000)
+      {
+        if (currentScrollPosition === 0) {
         headerElement.style.backdropFilter = "blur(0px)";
         headerElement.style.backgroundColor = "#c4adf000";
         headerElement.style.webkitBackdropFilter = "blur(0px)";
@@ -50,7 +52,7 @@ const Navbar = () => {
         headerElement.style.backgroundColor = "#c4adf08a";  
         headerElement.style.webkitBackdropFilter = "blur(20px)";
         headerElement.style.boxShadow = "0px 1px 8px 0px #00000026";
-      }
+      }}
 
 
       // Update header visibility based on scroll direction

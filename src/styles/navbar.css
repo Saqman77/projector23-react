@@ -121,8 +121,8 @@ nav
     height: max-content;
     z-index: 9999;
     background: padding-box;
-    background: #c4adf0af;
-    backdrop-filter: blur(10px);
+    background: #c4adf0;
+    /* backdrop-filter: blur(10px); */
   }
   .navbar.mobile nav {
     display: flex;
@@ -137,7 +137,7 @@ nav
     transform: translateY(100%);
     display: flex;
     align-items: flex-end;
-    background: #4a90e226;
+    background: #c4adf07a;
     flex-direction: column;
     height: 100%;
     width: 100%;
@@ -150,7 +150,7 @@ nav
     box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: #c4adf0e0;
+    /* background: #c4adf0e0; */
     /* opacity: 0.5; */
     /* background-color: transparent; */
   }

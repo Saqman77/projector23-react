@@ -40,6 +40,7 @@ const Contact = () => {
   useEffect(() => {
     // Set the body background for the Contact page
     document.body.style.background = `url(${contactBg})`;
+    document.body.style.background = "";
     document.body.style.backgroundSize = "cover";
 
     // Cleanup: Reset the background when leaving the Contact page
@@ -80,15 +81,15 @@ const Contact = () => {
         <div className="contact-wrapper">
           <div className="cont_info" >
             <h1>CONTACT</h1>
-            <div className="info">
-              <p>Email : </p>
+            <div className="info email">
+              <p>E-mail : </p>
               <ul>
                 <li><p>tina@projector23.de</p></li>
                 <li><p>martin@projector23.de</p></li>
                 <li><p>richard@projector23.de</p></li>
               </ul>
             </div>
-            <div className="info" >
+            <div className="info phone" >
               <p>Phone : </p>
               <ul>
                 <li><p>+49 (0) 30 648 396 50</p></li>
