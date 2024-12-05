@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react" ;
 import BackButton from "../components/back_button";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
@@ -6,6 +7,18 @@ import "../styles/Imprint.css";
 
 const Imprint = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if(window.innerWidth < 1000){
+    // Add a class to the body element
+    document.body.classList.add("imprint-page-background");
+
+    // Cleanup: Remove the class when the component is unmounted
+    return () => {
+      document.body.classList.remove("imprint-page-background");
+    };}
+  }, []);
+
   
 
   return (

@@ -318,7 +318,7 @@
 }
 @media (max-width: 900px) {
   .works .navbar {
-    padding: 0 1em;
+    padding: 0 0em;
   }
   .works .works_nav {
     display: flex;

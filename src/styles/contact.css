@@ -1,37 +1,48 @@
 .contact {
-  background-image: url('../assets/images/background/contact-background-1.webp');
+  /* background-image: url('../assets/images/background/contact-background-1.webp'); */
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 100%;
   justify-content: space-between;
-  background-position: absolute;
-  background-position: top(0);
+  /* background-position: top,left; */
+  
 }
 .contact .navbar {
   padding: 0 1em;
 }
+.contact .contact-wrapper
+{
+  padding: 6.5vw 4.2vw 6.5vw 8.8vw;
+}
+/* .contact .footer
+{
+  position: absolute;
+  bottom: 0;
+} */
 .contact > video {
   position: absolute;
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   object-fit: cover;
   mix-blend-mode: screen;
-  z-index: 1;
+  z-index: -1;
   opacity: 0.7;
+  top:0;
+  left:0;
 }
 .contact h1 {
   color: #A1E7F9;
   /* font-family: Gilroy;
   font-size: 86px; */
   font-family: Outfit;
-  font-size: 60px;
+  font-size: 6.6vw;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   letter-spacing: -1.92px;
 }
 .contact .cont_info {
-  padding: 0 100px;
+  /* padding: 0 100px; */
   z-index: 2;
 }
 .contact .cont_info .info {
@@ -40,7 +51,7 @@
 .contact .cont_info .info > p {
   color: #7f3e98;
   font-family: Outfit;
-  font-size: 20px;
+  font-size: 2.3vw;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -63,9 +74,18 @@
 }
 .contact .office_info {
   display: flex;
-  justify-content: center;
-  padding: 0 200px;
+  /* justify-content: center; */
+  /* padding: 0 200px; */
   z-index: 2;
+}
+.contact .office_info .container {
+
+  margin-left: auto;
+}
+
+.contact .linkedIn-container
+{
+  margin-top: 5.7vw;
 }
 .contact .subtitle {
   color: #7f3e98;
@@ -108,18 +128,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 200px;
-  padding-bottom: 60px;
+  /* padding: 0 200px; */
+  /* padding-bottom: 60px; */
 }
-.contact .linkedin_info .btn {
+
+
+.contact .linkedin_info .linkedIn-btn {
   border-radius: 82.5px;
   border: 0.825px solid #fff;
-  opacity: 0.7;
-  background: linear-gradient(
-    127deg,
-    rgba(127, 62, 152, 0.5) 38%,
-    rgba(179, 239, 254, 0.5) 81.42%
-  );
+
   background-clip: none;
   -webkit-text-fill-color: #fff;
   color: #fff !important;
@@ -127,16 +144,13 @@
   font-style: normal;
   font-weight: 500;
   margin: 0;
-  /* width: 00px; */
   display: flex;
   justify-content: space-around;
-  width: 200px;
-  padding: 10px 10px;
   height: fit-content;
 }
 @media (max-width: 999px) {
   .contact .navbar {
-    padding: 0 1em;
+    padding: 0 0em;
   }
   .contact h1 {
     font-size: 60px;
@@ -223,23 +237,23 @@
 
 @media (min-width:1000px) {
   .contact h1 {
-    font-size: 90px;
+    font-size: 6.6vw;
   }
    .contact .cont_info .info > p {
-    font-size: 25px;
+    font-size: 2.7vw;
     /* line-height: 2.8; */
   } 
   .contact .cont_info .info > ul p { 
-    font-size: 18px;
+    font-size: 2.2vw;
     /* line-height: 2.8; */
   }
   .contact .subtitle {
-    font-size: 25px;
+    font-size: 2.7vw;
   }
   .contact .sublist p {
-    font-size: 18px;
+    font-size: 2.2vw;
   }
   .contact .sublist a {
-    font-size: 18px;
+    font-size: 2.2vw;
   }
 }
