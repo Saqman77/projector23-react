@@ -1,4 +1,4 @@
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar.jsx";
 import "../styles/works.css";
 import logos from "../assets/images/logos.png";
 import testIm from "../assets/images/img3.jpeg";
