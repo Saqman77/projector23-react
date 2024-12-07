@@ -34,6 +34,7 @@ export default defineConfig({
           '@utils': path.resolve(__dirname, 'src/utils'),
           '@images': path.resolve(__dirname, 'src/assets/images'),
           '@vid': path.resolve(__dirname, 'src/assets/vid'),
+          '@fonts': path.resolve(__dirname, 'src/assets/fonts'),
         },
     },
 })
