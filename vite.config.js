@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
     // depending on your application, base can also be "/"
-    root: './src',
-    publicDir: './public',
-    base: '/',
+    root: 'src/',
+    publicDir: '../public/',
+    // base: '/',
     plugins: [react()],
     esbuild: {
         loader: 'jsx', // Ensure JSX is enabled for .js files
