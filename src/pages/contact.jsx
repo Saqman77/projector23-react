@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { useRef, useEffect } from "react";
-import BackButton from "../components/back_button";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import work_bg from "../assets/vid/homebg-video.mp4";
-import contactBg from "../assets/images/background/contact-background-1.webp"
-import "../styles/contact.css";
+import BackButton from "@components/back_button";
+import Footer from "@components/footer";
+import Navbar from "@components/navbar";
+import work_bg from "@vid/homebg-video.mp4";
+import contactBg from "@images/background/contact-background-1.webp"
+import "@styles/contact.css";
 
 const Contact = () => {
   const videoRef = useRef(null);

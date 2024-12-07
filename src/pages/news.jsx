@@ -1,7 +1,7 @@
 // import { useNavigate } from "react-router-dom";
-// import BackButton from "../components/back_button";
-// import Footer from "../components/footer";
-// import Navbar from "../components/navbar";
+// import BackButton from "@components/back_button";
+// import Footer from "@components/footer";
+// import Navbar from "@components/navbar";
 // import "../styles/news.css";
 
 // const News = () => {
@@ -51,13 +51,13 @@
 // export default News;
 
 import { useNavigate } from "react-router-dom";
-import BackButton from "../components/back_button";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import "../styles/news.css";
+import BackButton from "@components/back_button";
+import Footer from "@components/footer";
+import Navbar from "@components/navbar";
+import "@styles/news.css";
 import React from "react";
-import lovebot from "../assets/images/news/news2.jpeg";
-import avi from "../assets/images/news/news-avi.png";
+import lovebot from "@images/news/news2.jpeg";
+import avi from "@images/news/news-avi.png";
 
 const News = () => {
   const navigate = useNavigate();

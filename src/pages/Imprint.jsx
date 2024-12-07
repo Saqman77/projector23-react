@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react" ;
-import BackButton from "../components/back_button";
-import Footer from "../components/footer";
-import Navbar from "../components/navbar";
-import "../styles/Imprint.css";
+import BackButton from "@components/back_button";
+import Footer from "@components/footer";
+import Navbar from "@components/navbar";
+import "@styles/Imprint.css";
 
 const Imprint = () => {
   const navigate = useNavigate();

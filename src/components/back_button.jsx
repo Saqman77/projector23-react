@@ -1,5 +1,5 @@
-import "../styles/back_botton.css";
-import useResponsive from "../utils/useResponsive";
+import "@styles/back_botton.css";
+import useResponsive from "@utils/useResponsive";
 
 const BackButton = ({ onClick, className }) => {
   const screenSize = useResponsive()

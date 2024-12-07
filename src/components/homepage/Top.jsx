@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../navbar";
-import "../../styles/homepage.css";
-import backGb from "../../assets/vid/homebg-video.mp4";
+import Navbar from "@components/navbar";
+import "@styles/homepage.css";
+import backGb from "@vid/homebg-video.mp4";
 
 const InfoParagraph = ({ children }) => (
     <p className="info-paragraph">{children}</p>

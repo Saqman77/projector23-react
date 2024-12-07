@@ -1,11 +1,11 @@
-import prof1 from "../../assets/images/prof1.jpeg";
-import prof2 from "../../assets/images/prof2.jpeg";
-import prof3 from "../../assets/images/prof3.jpeg";
-import prof4 from "../../assets/images/prof4.jpeg";
-import prof5 from "../../assets/images/prof5.jpeg";
-import prof6 from "../../assets/images/prof6.jpeg";
-import prof7 from "../../assets/images/prof7.jpeg";
-import prof8 from "../../assets/images/prof8.jpeg";
+import prof1 from "@images/prof1.jpeg";
+import prof2 from "@images/prof2.jpeg";
+import prof3 from "@images/prof3.jpeg";
+import prof4 from "@images/prof4.jpeg";
+import prof5 from "@images/prof5.jpeg";
+import prof6 from "@images/prof6.jpeg";
+import prof7 from "@images/prof7.jpeg";
+import prof8 from "@images/prof8.jpeg";
 
 export const teamMembers = [
     { name: "Martin kleinmichel", image: prof1, role: "Creative, Producer" },
