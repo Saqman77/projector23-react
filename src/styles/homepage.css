@@ -57,7 +57,7 @@
 .homepage .top .info h1 {
   color: rgba(255, 255, 255, 0.6);
   color: #fff;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 80px;
   font-style: normal;
   font-weight: 800;
@@ -121,7 +121,7 @@
 .homepage .top .info .moreIf p {
   color: #7f3e98;
   font-size: 16px;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -183,7 +183,7 @@
 }
 .homepage .more_content h1.ourteam {
   color: #A1E7F9;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size:86px;
   font-style: normal;
   font-weight: 800;
@@ -199,7 +199,7 @@
 }
 .homepage .more_content .our_team .mber p {
   color: #fff;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -252,7 +252,7 @@
   display: flex;
   flex-shrink: 0;
   color: white;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 24px;
   font-style: normal;
   font-weight: 800;
@@ -281,7 +281,7 @@
 }
 @media (max-width: 916px) {
   .homepage .top .info h1 {
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 50px;
     line-height: 1;
   }
@@ -298,7 +298,7 @@
     background-attachment: fixed;
   } */
   .homepage .top .info {
-    /* padding: 1em; */
+    padding: 1em;
     padding-top: 0;
   }
   .homepage .more_content .preshow {
@@ -342,7 +342,7 @@
     margin-bottom: 3em;
   }
   .homepage .more_content h1.ourteam {
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 60px;
     margin-top: 1.5em;
   }
@@ -367,7 +367,7 @@
     position: relative;
   }
   .homepage .top .info h1 {
-    font-family:Outfit;
+    font-family:'Outfit';
     font-size: 37px;
     margin-bottom: -8px;
   }

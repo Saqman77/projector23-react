@@ -28,7 +28,7 @@
 
 .works > h1 {
   color: #A1E7F9;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 86px;
   font-style: normal;
   font-weight: 800;
@@ -75,7 +75,7 @@
   backdrop-filter: blur(40px);
   color: #fff;
   text-align: center;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -104,7 +104,7 @@
 .works > .info > .text {
   color: #fff;
   font-size: 18px;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -132,7 +132,7 @@
   /* margin-bottom: -3em; */
   margin-left: 5.1em;
   margin: 3em 4em;
-  font-family: Outfit;
+  font-family: 'Outfit';
 }
 .works > .info > .logos {
   width: 100%;
@@ -188,7 +188,7 @@
 .works .eachwork .info p:nth-child(1) {
   color: #fff;
   /* text-align: center; */
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
@@ -198,7 +198,7 @@
 .works .eachwork .info p:nth-child(2) {
   color: #90e8ff;
   /* text-align: center; */
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -208,7 +208,7 @@
 }
 .works .eachwork .info p:nth-child(3) {
   color: #fff;
-  font-family: Outfit;
+  font-family: '''Outfit''';
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -308,7 +308,7 @@
 @media (max-width: 1090px) {
   .works .works_nav .work .text {
     font-size: 16px;
-    font-family: Outfit;
+    font-family: ''Outfit'';
   }
   .works .works_nav .work {
     width: calc((100% / 5) - 1em);
@@ -353,7 +353,7 @@
     width: 90%;
   }
   .works > h1 {
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 60px;
     text-align: center;
   }

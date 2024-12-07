@@ -1,5 +1,9 @@
 .news {
     background-image: url('../assets/images/background/Desktop-1.webp');
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
   @media (max-width: 800px) {
     body{
@@ -8,30 +12,18 @@
     background-attachment: fixed;
     }
   }
-  /* background: linear-gradient(
-      0deg,
-      rgba(74, 144, 226, 0.15) 0%,
-      rgba(74, 144, 226, 0.15) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(245, 245, 245, 0.4) 0%,
-      rgba(245, 245, 245, 0.4) 100%
-    ),
-    linear-gradient(
-      180deg,
-      #d3b8e6 0%,
-      #4a90e2 36.5%,
-      rgba(186, 210, 239, 0.74) 60%,
-      rgba(246, 245, 245, 0.7) 72.5%,
-      rgba(198, 172, 208, 0.76) 83.5%,
-      #7f3e98 100%
-    ); */
 
-  min-height: 100vh;
-  /* padding: 0 60px; */
-  /* padding-bottom: 60px; */
 }
+
+@media  (max-width: 1200px){
+  .news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+  
+
 
 /* .news .navbar {
   padding: 0 60px;
@@ -44,7 +36,7 @@
 .news > h1 {
   margin-top: 0.7em;
   color: #A1E7F9;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 86px;
   font-style: normal;
   font-weight: 800;
@@ -65,7 +57,7 @@
 }
 .news .news_tap .title {
   color: #7f3e98;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -82,7 +74,7 @@
 }
 .news .news_tap .info .more {
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -99,12 +91,15 @@
 }
 
 @media (max-width: 999px) {
+  .news .navbar {
+    padding: 0 ;
+  }
   .news .news_tap .info {
     display: block;
   }
   .news .news_tap .info .more {
     color: #56005e;
-    font-family: Outfit;
+    font-family: 'Outfit';
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -129,7 +124,7 @@
   }
   
   .news > h1 {
-    /* font-family: Outfit; */
+    /* font-family: 'Outfit'; */
     font-size: 60px;
     /* text-align: center; */
   }

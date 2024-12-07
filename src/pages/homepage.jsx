@@ -1,4 +1,4 @@
-import { lazy, useEffect, useRef, useCallback } from "react";
+import { lazy, Suspense, useEffect, useRef, useCallback } from "react";
 import "../styles/homepage.css";
 
 const Top = lazy(() => import("../components/homepage/Top"));
@@ -38,8 +38,10 @@ const Homepage = () => {
 
   return (
     <div className="homepage" >
+      <Suspense>
         <Top videoRef={videoRef} />
         <MoreContent />
+      </Suspense>
     </div>
   );
 };

@@ -46,7 +46,7 @@
 
 .Imprint p {
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -60,7 +60,7 @@
 
 .Imprint h1 {
   color: #7f3e98;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 77px;
   font-style: normal;
   font-weight: 800;
@@ -70,7 +70,7 @@
 }
 .Imprint h2 {
   color: #7f3e98;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 22px;
   font-style: normal;
   font-weight: 800;
@@ -79,7 +79,7 @@
 }
 .Imprint h3 {
   color: #7f3e98;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -88,7 +88,7 @@
 }
 .Imprint h3 {
   color: #7f3e98;
-  font-family: Gilroy;
+  font-family: 'Gilroy';
   font-size: 18px;
   font-style: normal;
   font-weight: 800;
@@ -98,7 +98,7 @@
 }
 .Imprint .highLit {
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -130,7 +130,7 @@
   background-clip: none;
   -webkit-text-fill-color: #fff;
   color: #fff !important;
-  font-family: Outfit;
+  font-family: 'Outfit';
 
   font-style: normal;
   font-weight: 500;
@@ -168,7 +168,7 @@
     margin-right: 0em;
   }
   .Imprint h1 {
-    font-family: Gilroy;
+    font-family: 'Gilroy';
     font-size: 3em;
   }
   .Imprint h1,

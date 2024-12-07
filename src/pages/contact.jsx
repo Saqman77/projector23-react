@@ -31,7 +31,7 @@ const Contact = () => {
     
         return () => {
           window.removeEventListener("resize", adjustContainerWidth);
-          linkedInRef.current.style.width = ""; // Reset width on cleanup
+          // linkedInRef.current.style.width = ""; // Reset width on cleanup
           document.documentElement.style.height = "";
         };
 

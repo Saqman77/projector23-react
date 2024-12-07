@@ -1,9 +1,20 @@
+#root{
+  height: 100%;
+}
+
+.App{
+height: 100%;
+}
+/* .contact{
+  height: 100%;
+}  */
 .contact {
   /* background-image: url('../assets/images/background/contact-background-1.webp'); */
   display: flex;
   flex-direction: column;
   min-height: 100%;
   justify-content: space-between;
+  height: 100%;
   /* background-position: top,left; */
   
 }
@@ -20,7 +31,11 @@
 }
 .contact .contact-wrapper
 {
-  padding: 6.5vw 4.2vw 6.5vw 8.8vw;
+  padding: 0 4.2vw 0 8.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
 }
 /* .contact .footer
 {
@@ -29,7 +44,7 @@
 } */
 .contact > video {
   position: absolute;
-  /* height: 100%; */
+  height: 100%;
   width: 100%;
   object-fit: cover;
   mix-blend-mode: screen;
@@ -42,8 +57,8 @@
   color: #A1E7F9;
   /* font-family: Gilroy;
   font-size: 86px; */
-  font-family: Outfit;
-  font-size: 6.6vw;
+  font-family: 'Outfit';
+  font-size: clamp(50px, 6.6vw, 96px);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -58,7 +73,7 @@
 }
 .contact .cont_info .info > p {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 2.3vw;
   font-style: normal;
   font-weight: 800;
@@ -73,7 +88,7 @@
 }
 .contact .cont_info .phone > ul p {
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -82,7 +97,7 @@
 }
 .contact .cont_info .email > ul p {
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -91,22 +106,22 @@
 }
 .contact .office_info {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   /* padding: 0 200px; */
   z-index: 2;
 }
-.contact .office_info .container {
+/* .contact .office_info .container {
 
   margin-left: auto;
-}
+} */
 
-.contact .linkedIn-container
+/* .contact .linkedIn-container
 {
   margin-top: 5.7vw;
-}
+} */
 .contact .subtitle {
   color: #7f3e98;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 20px;
   font-style: normal;
   font-weight: 800;
@@ -121,7 +136,7 @@
 .contact .sublist p {
   list-style-type: none;
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -131,7 +146,7 @@
 .contact .sublist a {
   list-style-type: none;
   color: #56005e;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-size: 13px;
   font-style: normal;
   font-weight: 300;
@@ -157,7 +172,7 @@
   background-clip: none;
   -webkit-text-fill-color: #fff;
   color: #fff ;
-  font-family: Outfit;
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 500;
   margin: 0;
@@ -185,6 +200,10 @@
   .contact .navbar {
     padding: 0 0em;
   }
+  /* .contact > .navbar.mobile.closed{
+    background: #c4adf000 !important;
+    backdrop-filter: blur(0px)!important;
+  } */
   .contact  {
     justify-content: normal;
   }
@@ -205,25 +224,28 @@
   }
 }
 @media (max-width: 1000px) {
-  #root{
-    height: 100%;
-}
 
-.App{
-  height: 100%;
-}
-  /* .contact{
-    /* height: calc(100vh - 420); */
-  /* } */ 
   .contact > .contact-wrapper{
     display: flex;
     flex-direction: column;
     padding-left: 0;
     padding-right: 0;
     padding-bottom: 0;
-    padding-top: 64px;
+    padding-top: 20vw;
     height: 100%;
     /* height: 100vh; */
+  }
+
+  .contact > video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    z-index: -1;
+    opacity: 0.2;
+    top:0;
+    left:0;
   }
 
   .contact .cont_info h1{
@@ -268,16 +290,12 @@
   }
   .contact .cont_info  .email{
     margin: 0 0 8px 0;
-    /* font-size: 14px; */
   }
-  /* .contact .cont_info  .email > ul p{ */
-    /* margin: 0 0 0 0.3em; */
-    /* font-size: 14px; */
-  /* } */
-  .contact .cont_info  .phone > ul, .contact .cont_info  .phone > ul  p{
-    /* margin: auto 0 auto 0.3em; */
+
+  .contact .cont_info  .email > ul p, .contact .cont_info  .phone > ul  p{ 
+    margin: auto 0 auto 0.3em;
     font-size: clamp(14px, 4.3vw, 28px);
-  }
+    } 
   .contact .cont_info {
     padding: 0 16px;
     font-size: clamp(16px, 5vw, 32px);
@@ -303,14 +321,22 @@
     flex-direction: column-reverse;
     align-items: center;
     padding: 0 16px;
+    height: 100%;
     padding-bottom: 0px;
   }
     .contact .linkedin_info .linkedIn-btn{
       font-size: clamp(16px, 5vw, 32px);
-      padding: 14px 20px;
-      width: 37vw;
-      height: 14vw;
-      margin-top: 15vh;
+      /* padding: 14px 20px; */
+      width: clamp(60px,37vw,120px);
+      height: clamp(21px,14vw,42px);
+      /* margin-top: 15vw; */
+      /* margin-bottom: 3.5em; */
+      margin: auto;
+    }
+
+    .contact .sublist  p, .contact .sublist  a
+    {
+      font-size: clamp(14px, 4.3vw, 28px);
     }
     
   
@@ -339,17 +365,17 @@
   }
 }
 
-@media (min-width:1500px) {
+/* @media (max-width:1500px) {
   .contact h1 {
-    font-size: 90px;
+    font-size: clamp(50px, 6.6vw, 90px);
   }
   .contact .cont_info .info > p {
     font-size: 25px;
-    /* line-height: 2.8; */
+    line-height: 2.8;
   }
   .contact .cont_info .info > ul p {
     font-size: 18px;
-    /* line-height: 2.8; */
+    line-height: 2.8;
   }
   .contact .subtitle {
     font-size: 25px;
@@ -360,27 +386,27 @@
   .contact .sublist a {
     font-size: 18px;
   }
-}
+} */
 
 @media (min-width:1000px) {
   .contact h1 {
-    font-size: clamp(32px, 10vw, 64px);
+    font-size: clamp(50px, 6.6vw, 100px);
   }
    .contact .cont_info .info > p {
-    font-size: clamp(16px, 5vw, 32px);
+    font-size: clamp(16px, 2.6vw, 40px);
     /* line-height: 2.8; */
   } 
   .contact .cont_info .info > ul p { 
-    font-size: clamp(14px, 4.3vw, 28px);
+    font-size: clamp(14px, 1.6vw, 24px);
     /* line-height: 2.8; */
   }
   .contact .subtitle {
-    font-size: clamp(14px, 4.3vw, 28px);
+    font-size: clamp(16px,2.6vw,40px);
   }
   .contact .sublist p {
-    font-size: clamp(14px, 4.3vw, 28px);
+    font-size: clamp(14px, 1.6vw, 24px);
   }
   .contact .sublist a {
-    font-size: clamp(14px, 4.3vw, 28px);
+    font-size: clamp(14px, 1.6vw, 24px);
   }
 }

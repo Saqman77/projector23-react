@@ -25,8 +25,8 @@ const BackButton = ({ onClick, className }) => {
             y2="22.5"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="white" />
-            <stop offset="1" stop-color="white" stop-opacity="0.2" />
+            <stop stopColor="white" />
+            <stop offset="1" stopColor="white" stopOpacity="0.2" />
           </linearGradient>
         </defs>
       </svg>

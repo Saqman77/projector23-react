@@ -6,12 +6,14 @@ import { useState, useEffect, useRef } from "react";
 const Navbar = () => {
   const [mob_Nav_open, setMobNavOpen] = useState(false);
   const navRef = useRef(null);
+  const mobNavRef = useRef(null);
   const prevScrollPosition = useRef(window.scrollY);
 
   const handle_open_mob_nav = () => {
     setMobNavOpen((prev) => !prev);
   };
 
+  
   useEffect(() => {
     const adjustBodyPadding = () => {
       if (navRef.current) {
@@ -36,6 +38,7 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
       const headerElement = navRef.current;
+      const mobNav = mobNavRef.current;
 
       if (!headerElement) return;
 
@@ -54,9 +57,20 @@ const Navbar = () => {
         headerElement.style.boxShadow = "0px 1px 8px 0px #00000026";
       }}
 
+     else {
+      // Mobile header backdrop blur 
+    if (currentScrollPosition === 0)
+      {
+        mobNav.classList.add("navTop");
+      }
+
+    else {
+        mobNav.classList.remove("navTop");
+      }}
+      
 
       // Update header visibility based on scroll direction
-      if (prevScrollPosition.current > currentScrollPosition) {
+      if (prevScrollPosition.current >= currentScrollPosition) {
         headerElement.style.transform = "translateY(0px)";
       } else {
         headerElement.style.transform = "translateY(-200px)";
@@ -67,17 +81,19 @@ const Navbar = () => {
       prevScrollPosition.current = currentScrollPosition;
     };
 
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
-
+  }, [mob_Nav_open]);
+  
   
   return (
     <div className="navbb" ref={navRef}>
-      <div className={`navbar mobile ${mob_Nav_open ? "" : "closed"}`} >
+      <div  className={`navbar mobile ${mob_Nav_open ? "" : "closed"} `} ref={mobNavRef}>
         <nav>
           <div className="btn_ham" >
             <Link to="/">
@@ -91,32 +107,32 @@ const Navbar = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   {" "}
                   <path
                     d="M20 7L4 7"
                     stroke="purple"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
                   ></path>{" "}
                   <path
                     // opacity="0.5"
                     d="M20 12L4 12"
                     stroke="purple"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
                   ></path>{" "}
                   <path
                     d="M20 17L4 17"
                     stroke="purple"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
                   ></path>{" "}
                 </g>
               </svg>
@@ -175,7 +191,7 @@ const Navbar = () => {
                   style={({ isActive }) => ({
                     color: isActive ? "#f7f7f7" : "#7f3e98cc",
                     fontFamily: "Outfit",
-                    fontSize: "17.7px",
+                    fontSize: "21.7px",
                     fontWeight: 800,
                     letterSpacing: "0.01em",
                     textDecoration: "none",
@@ -210,7 +226,7 @@ const Navbar = () => {
                   <span
                     style={{
                       color: "#f7f7f7",
-                      fontSize: "17.7px",
+                      fontSize: "21.7px",
                       position: "absolute",
                       transform: "translateY(100%)",
                       left: 0,
