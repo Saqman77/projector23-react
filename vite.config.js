@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';  // To handle the path module
 
 export default defineConfig({
-  root: 'src',
+  root: 'src/',
   publicDir: '../public',
   base: './',  // Use a relative base URL
   plugins: [react()],
