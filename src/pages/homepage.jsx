@@ -1,8 +1,8 @@
 import { lazy, Suspense, useEffect, useRef, useCallback } from "react";
 import "@styles/homepage.css";
 
-const Top = lazy(() => import("../components/homepage/Top"));
-const MoreContent = lazy(() => import("../components/homepage/MoreContent"));
+const Top = lazy(() => import("@components/homepage/Top"));
+const MoreContent = lazy(() => import("@components/homepage/MoreContent"));
 
 
 
