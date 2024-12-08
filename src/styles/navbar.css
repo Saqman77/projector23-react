@@ -133,11 +133,13 @@ nav
     background: padding-box;
     background: #c4adf069;
     backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px 1px #0000003d;
   }
 
   .navbar.mobile.closed.navTop{
     background: #c4adf000;
     backdrop-filter: blur(0px);
+    box-shadow: 0px 0px 15px 1px #00000000;
   }
   .navbar.mobile nav {
     display: flex;
