@@ -49,6 +49,7 @@
   user-select: none;
   border-radius: 15px;
   border: 1.6px solid #fafafa;
+  -webkit-tap-highlight-color: transparent;
   /* opacity: 0.7; */
   background: rgba(255, 255, 255, 0.5);
   -webkit-backdrop-filter: blur(40px);
@@ -123,9 +124,10 @@
   width: 60%;
   margin: 0 auto;
   position: relative;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out 0.2;
   overflow: hidden;
-  animation: fadeIn 0.5s forwards ease-in-out;
+  animation: fadeIn 0.5s forwards ease-in-out 0.2s;
+  contain: paint;
 }
 
 .works .eachwork > .image {
@@ -193,15 +195,17 @@
 
 .works .eachwork.active .info {
   position: relative;
-  transition: 0.5s;
+  /* display: block; */
+  transition: all 0.5s ease-in-out 0.2s;
   /* height: fit-content; */
   /* height: calc(100% - 1px); */
   height: 100%;
 }
 .works .eachwork .info {
   /* position: absolute; */
+  /* display: none; */
   height: 0;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out 0.2s;
   /* z-index: 22; */
   bottom: 0;
   /* overflow: hidden; */
@@ -222,14 +226,16 @@
 .works .eachwork .info > div {
   transform: translateY(-100%);
   opacity: 0;
+  /* display: none; */
   /* z-index: -1; */
   position: relative;
-  transition: 0.5s;
+  transition: all 0.5s ease-in-out 0.2s;
 }
 
 .works .eachwork.active .info > div {
   transform: translateY(0%);
   opacity: 1;
+  /* display: inline; */
   /* z-index: -1; */
   position: relative;
 }
@@ -306,6 +312,14 @@
     overflow: hidden;
     border-radius: 0.9em;
   }
+  .works .eachwork.active .info{
+    margin-top: 1.5em;
+  }
+  /* .works .eachwork .active .image .image_each_work
+  {
+    width: 100%;
+    margin-bottom: 1.5em;
+  } */
 }
 @media (max-width: 900px) {
   /* .works .works_nav .work .text {
@@ -336,7 +350,6 @@
     mix-blend-mode: color-burn;
     z-index: -1;
   }
-
 
 
   .show_works{
@@ -371,12 +384,27 @@
     margin: 0px 0px;
   }
 
+  /* .works .eachwork .active .image_each_work {
+    aspect-ratio: 15/4;
+    height: min-content;
+    width: 100%;
+    margin-bottom: 1.5em;
+  } */
+
   .works .eachwork .image_each_work {
     aspect-ratio: 15/4;
     height: min-content;
     width: 100%;
     margin: 0;
   }
+
+  .works.eachwork.active.image_each_work {
+    aspect-ratio: 15/4;
+    height: min-content;
+    width: 100%;
+    margin: 0;
+  }
+
   .works > h1 {
     font-family: 'Outfit';
     font-size: 60px;

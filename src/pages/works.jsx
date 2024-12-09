@@ -8,7 +8,7 @@ import char_anim from "@images/char_anim.jpg";
 import inov_img from "@images/inov_img.jpg";
 import sci_img from "@images/sci_img.jpg";
 // import work_bg from "../assets/vid/workbg-video.mp4";
-import { useEffect, useRef, useState } from "react";
+import {lazy, Suspense, useEffect, useRef, useState } from "react";
 import BackButton from "@components/back_button";
 import Footer from "@components/footer";
 import { useNavigate } from "react-router-dom";
