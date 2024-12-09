@@ -40,8 +40,8 @@ const Homepage = () => {
     <div className="homepage" >
       <Suspense>
         <Top videoRef={videoRef} />
-        <MoreContent />
       </Suspense>
+        <MoreContent />
     </div>
   );
 };
