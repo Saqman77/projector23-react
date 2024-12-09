@@ -29,7 +29,7 @@ const TeamMember = ({ name, image, role }) => (
       <div className="more_content">
         <div className="preshow" style={{
           animation: "fadeInOut 3s infinite",
-          background:` url(${images[currentImageIndex]}`,
+          backgroundImage:` url(${images[currentImageIndex]}`,
           backgroundRepeat:"no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",

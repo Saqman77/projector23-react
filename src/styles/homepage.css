@@ -126,9 +126,9 @@
   opacity: 0;
    /* Apply the keyframe animation */
   /* background: url("@images/img1.jpeg"); */
-  /* background-size: cover; */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* animation: animateImsHome calc(1.5s * 6) infinite ease-in-out 0.5s; */
 }
 
