@@ -1,8 +1,9 @@
 import { lazy, Suspense, useEffect, useRef, useCallback } from "react";
 import "@styles/homepage.css";
+import MoreContent from "@components/homepage/MoreContent"
 
 const Top = lazy(() => import("@components/homepage/Top"));
-const MoreContent = lazy(() => import("@components/homepage/MoreContent"));
+
 
 
 
@@ -40,8 +41,8 @@ const Homepage = () => {
     <div className="homepage" >
       <Suspense>
         <Top videoRef={videoRef} />
-        <MoreContent />
       </Suspense>
+        <MoreContent />
     </div>
   );
 };
