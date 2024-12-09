@@ -118,7 +118,7 @@
   position: relative;
 }
 
-.homepage .more_content .preshow {
+/* .homepage .more_content .preshow { */
   /* width: 72%;
   height: 260px;
   flex-shrink: 0;
@@ -133,7 +133,7 @@
   /* background-position: center; */
   /* background-repeat: no-repeat; */
   /* animation: animateImsHome calc(1.5s * 6) infinite ease-in-out 0.5s; */
-}
+/* } */
 
 .image-container {
   display: grid;
