@@ -41,8 +41,8 @@ const Homepage = () => {
     <div className="homepage" >
       <Suspense>
         <Top videoRef={videoRef} />
-      </Suspense>
         <MoreContent />
+      </Suspense>
     </div>
   );
 };
