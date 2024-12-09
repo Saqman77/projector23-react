@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect, useState}from "react";
 import { Link } from "react-router-dom";
 import Footer from "@components/footer.jsx";
-import { teamMembers } from "./TeamData";
+import { teamMembers, images } from "./TeamData";
+// import { images } from "./imagePaths";
 
 const TeamMember = ({ name, image, role }) => (
     <div className="mber">
@@ -14,10 +15,23 @@ const TeamMember = ({ name, image, role }) => (
   );
   
   const MoreContent = () => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Adjust duration
+    // console.log(images);
+    return () => clearInterval(interval);
+  }, []);
    
     return (
       <div className="more_content">
-        <div className="preshow"></div>
+        <div className="preshow" style={{
+          background:` url(${images[currentImageIndex]}`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}></div>
   
         <h1 className="ourteam">OUR TEAM</h1>
         <div className="our_team">

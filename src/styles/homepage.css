@@ -123,12 +123,27 @@
   /* background: red; */
   margin: 0 auto;
   margin-top: 10em;
-  background: url("@images/img1.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation: animateImsHome calc(1.5s * 6) infinite ease-in-out 0.5s;
+  opacity: 0;
+  animation: fadeInOut 3s  ease-out 0.1s infinite; /* Apply the keyframe animation */
+  /* background: url("@images/img1.jpeg"); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* animation: animateImsHome calc(1.5s * 6) infinite ease-in-out 0.5s; */
 }
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .homepage .more_content {
   background: url('@images/background/Background-mob.webp');
   margin-top: 0;
@@ -343,7 +358,7 @@
   }
 }
 
-@keyframes animateImsHome {
+/* @keyframes animateImsHome {
   0%,
   100% {
     background: url("@images/img1.jpeg");
@@ -375,7 +390,7 @@
     background-size: cover;
     background-position: center;
   }
-}
+} */
 @keyframes animFirstWord1 {
   0% {
     opacity: 0;
