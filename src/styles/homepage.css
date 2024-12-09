@@ -124,7 +124,7 @@
   margin: 0 auto;
   margin-top: 10em;
   opacity: 0;
-  animation: fadeInOut 3s  ease-out 0.1s infinite; /* Apply the keyframe animation */
+   /* Apply the keyframe animation */
   /* background: url("@images/img1.jpeg"); */
   /* background-size: cover; */
   /* background-position: center; */
