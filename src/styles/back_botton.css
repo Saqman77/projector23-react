@@ -13,9 +13,7 @@
   align-items: center;
   margin: 0 auto;
   cursor: pointer;
-  user-select: transparent;
-  -webkit-user-select: transparent;
-  -webkit-tap-highlight-color: transparent;
+  user-select: none;
   border: 0.825px solid #fff;
   -webkit-text-fill-color: #fff;
   color: #fff ;
