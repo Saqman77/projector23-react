@@ -418,9 +418,9 @@
     margin: 0.5em 0.5em;
     position: relative;
   }
-  .works .eachwork > .image {
-    /* height: 140px; */
-  }
+  /* .works .eachwork > .image {
+    height: 140px;
+  } */
   .works .works_nav .work .text {
     /* height: 55px; */
     width: 85%;
