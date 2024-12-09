@@ -127,7 +127,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  animation: animateImsHome calc(1.5s * 6) infinite ease-in-out;
+  animation: animateImsHome calc(1.5s * 6) infinite ease-in-out 0.5;
 }
 .homepage .more_content {
   background: url('@images/background/Background-mob.webp');
