@@ -183,6 +183,12 @@
     /* margin: ; */
     margin: 2em auto;
   }
+
+  .Imprint ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+  }
+
   .Imprint ul p,
   .Imprint .ad_ce {
     /* list-style-type: none; */
