@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  z-index: 5;
+  z-index: 9999;
   transform: translateY(0);
   transition: all, ease-in-out .5s;
   position: fixed;
@@ -132,6 +132,7 @@ nav
     z-index: 9999;
     background: padding-box;
     background: #c4adf069;
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0px 0px 15px 1px #0000003d;
   }
@@ -139,6 +140,7 @@ nav
   .navbar.mobile.closed.navTop{
     background: #c4adf000;
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
     box-shadow: 0px 0px 15px 1px #00000000;
   }
   .navbar.mobile nav {

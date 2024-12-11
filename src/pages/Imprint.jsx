@@ -40,7 +40,6 @@ const Imprint = () => {
                   <p>Film23 GmbH</p>
                 </li>
               </ul>
-
               <h3>Commercial Register Number</h3>
               <p className="ad_ce" >
                 Amtsgericht Charlottenburg Berlin HRA 41066B
