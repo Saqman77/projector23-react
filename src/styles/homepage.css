@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: flex-end;
   /* justify-content: center; */
-  padding: 3em;
+  padding: 3em 3em 0 3em;
 }   
 .homepage .top {
   /* padding: 3em; */
@@ -140,7 +140,7 @@
   width: 72%;
   height: 260px;
   margin: 0 auto;
-  margin-top: 10em;
+  margin-top: 6.5em;
   border-radius: 30px;
   overflow: hidden; /* Hide anything outside the container */
   position: relative;
@@ -197,7 +197,7 @@
   line-height: normal;
   letter-spacing: -1.68px;
   text-align: center;
-  margin-top: 1.2em;
+  margin-top: 1.15em;
 }
 .homepage .more_content .our_team .mber {
   width: calc((100% / 4) - 3em);
@@ -273,16 +273,17 @@
   letter-spacing: -1.28px;
   cursor: pointer;
   box-shadow: 2px 7px 9px 0px #4c23511f;
+  transition: all 0.5s ease-out;
 }
 /* .homepage .more_content .btns .btn:nth-child(1) {
 
   color: white;
 } */
 .homepage .more_content .btns .btn:hover {
-  color: rgb(161, 231, 249);
-  background: linear-gradient(156deg, #7e3e98c5 43%, #b3effece 84%);
-  -webkit-text-fill-color:  rgba(161, 231, 249, 0.9);
-  opacity: .9;
+  /* color: rgb(161, 231, 249); */
+  background: rgba(161, 231, 249, 0.9);
+  /* -webkit-text-fill-color:  rgba(161, 231, 249, 0.9); */
+  opacity: 1;
   user-select: transparent;
   -webkit-user-select: transparent;
   -webkit-tap-highlight-color: transparent;
@@ -321,7 +322,7 @@
     width:90%;
     height: 140px;
     border-radius: 15px;
-    margin-top: 2em;
+    margin-top: 5.65em;
   }
   .homepage .more_content .our_team .mber {
     width: calc((100% / 2) - 3em);
@@ -355,7 +356,7 @@
   .homepage .top .info .moreIf {
     width: 100%;
     margin-top: 1.5em;
-    margin-bottom: 3em;
+    margin-bottom: 0;
   }
   .homepage .more_content h1.ourteam {
     font-family: 'Outfit';
@@ -511,9 +512,9 @@
   .homepage .more_content h1.ourteam {
     font-size:90px;
     font-weight: 1000;
-    line-height: 1.8;
+    /* line-height: 1.8; */
     letter-spacing: -1.68px;
-    margin-top: 1.2em;
+    margin-top: 1em;
   }
 
 

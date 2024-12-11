@@ -24,7 +24,7 @@ const Top = ({ videoRef }) => {
             />
           </div>
           <div className="main" >
-            <h1>PROJECTOR23</h1>
+            <h1>PROJECT23</h1>
             <h1>CREATIVE STUDIO</h1>
           </div>
   

@@ -14,7 +14,7 @@ import img5 from "@images/img5.jpeg";
 import img6 from "@images/img6.webp";
 
 export const teamMembers = [
-    { name: "Martin kleinmichel", image: prof1, role: "Creative, Producer" },
+    { name: "Martin Kleinmichel", image: prof1, role: "Creative, Producer" },
     { name: "Martina Sakova", image: prof2, role: "Concept Development, Producer" },
     { name: "Richard Sako", image: prof3, role: "Animation, VFX" },
     { name: "Sülke Schulz", image: prof4, role: "Creative Writer" },
