@@ -342,7 +342,7 @@
 
   .works > .info > .text {
     padding: 1em;
-    margin: 3em 1em;
+    margin: 1em 1em;
   }
   .works > video {
     width: 100%;
@@ -409,7 +409,8 @@
   .works > h1 {
     font-family: 'Outfit';
     font-size: 60px;
-    text-align: center;
+    /* text-align: center; */
+    padding: 0 16px;
   }
 }
 @media (max-width: 800px) {
