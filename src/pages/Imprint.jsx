@@ -40,6 +40,12 @@ const Imprint = () => {
                   <p>Film23 GmbH</p>
                 </li>
               </ul>
+              <h3>Commercial Register Number</h3>
+              <p className="ad_ce" >
+                Amtsgericht Charlottenburg Berlin HRA 41066B
+              </p>
+              <h3>EU VAT ID</h3>
+              <p className="ad_ce" >DE252281327</p>
               <BackButton className="top_tbn" onClick={() => navigate(-1)} />
               <h3>Liability for links</h3>
               <p>
@@ -103,12 +109,6 @@ const Imprint = () => {
               </p>
             </div>
             <div className="rgt">
-              <h3>Commercial Register Number</h3>
-              <p className="ad_ce" >
-                Amtsgericht Charlottenburg Berlin HRA 41066B
-              </p>
-              <h3>EU VAT ID</h3>
-              <p className="ad_ce" >DE252281327</p>
               <h3>Responsible for the content according to § 55 Abs. 2 RStV</h3>
               <p className="ad_ce" >Martina Sakova</p>
               <h3>References for the used pictures and graphics</h3>

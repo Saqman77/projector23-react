@@ -1,7 +1,8 @@
-import React from "react";
+import React, {useEffect, useState}from "react";
 import { Link } from "react-router-dom";
 import Footer from "@components/footer.jsx";
-import { teamMembers } from "./TeamData";
+import { teamMembers, images } from "./TeamData";
+// import { images } from "./imagePaths";
 
 const TeamMember = ({ name, image, role }) => (
     <div className="mber">
@@ -14,10 +15,38 @@ const TeamMember = ({ name, image, role }) => (
   );
   
   const MoreContent = () => {
-   
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [fadeClass, setFadeClass] = useState("fade-in");
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setFadeClass("fade-out");
+        setTimeout(() => {
+          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+          setFadeClass("fade-in");
+        }, 500); // Match the fade-out duration
+      }, 1500); // Delay between images
+      return () => clearInterval(interval);
+    }, []);
+  
     return (
       <div className="more_content">
-        <div className="preshow"></div>
+        <div className="image-container">
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`image-slide ${
+                index === currentImageIndex ? fadeClass : ""
+              }`}
+              style={{
+                backgroundImage: `url(${image})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          ))}
+        </div>
   
         <h1 className="ourteam">OUR TEAM</h1>
         <div className="our_team">
@@ -27,7 +56,7 @@ const TeamMember = ({ name, image, role }) => (
         </div>
   
         <div className="btns">
-          {['works', 'contact'].map((page) => (
+          {["works", "contact"].map((page) => (
             <Link key={page} to={`/${page}`} target="_top">
               <div className="btn">{page.toUpperCase()}</div>
             </Link>
@@ -38,5 +67,6 @@ const TeamMember = ({ name, image, role }) => (
       </div>
     );
   };
-
-export default MoreContent;
+  
+  export default MoreContent;
+  
