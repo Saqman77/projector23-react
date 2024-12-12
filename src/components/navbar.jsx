@@ -70,15 +70,29 @@ const Navbar = () => {
       
 
       // Update header visibility based on scroll direction
-      if (prevScrollPosition.current >= currentScrollPosition) {
+      if (prevScrollPosition.current >= currentScrollPosition ) {
         headerElement.style.transform = "translateY(0px)";
-      } else {
+        // setMobNavOpen(false);
+
+
+      }
+      
+
+      else {
         headerElement.style.transform = "translateY(-200px)";
         setMobNavOpen(false)
       }
 
+      if (prevScrollPosition.current !== currentScrollPosition)
+        {
+          setMobNavOpen(false)
+        }
+  
+
       // Update previous scroll position
       prevScrollPosition.current = currentScrollPosition;
+
+      // setMobNavOpen(false);
     };
 
     handleScroll();
@@ -87,6 +101,7 @@ const Navbar = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      // setMobNavOpen(false);
     };
   }, [mob_Nav_open]);
   
