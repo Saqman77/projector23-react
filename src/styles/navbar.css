@@ -6,7 +6,8 @@
   z-index: 9999;
   transform: translateY(0);
   transition: all, ease-in-out .5s;
-  position: fixed;
+  position: sticky;
+  position: -webkit-sticky;
   width: 100%;
   top: 0;
   left: 0;

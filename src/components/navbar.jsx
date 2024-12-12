@@ -14,25 +14,25 @@ const Navbar = () => {
   };
 
   
-  useEffect(() => {
-    const adjustBodyPadding = () => {
-      if (navRef.current) {
-        const navbarHeight = navRef.current.getBoundingClientRect().height;
-        document.body.style.paddingTop = `${navbarHeight}px`;
-      }
-    };
+  // useEffect(() => {
+  //   const adjustBodyPadding = () => {
+  //     if (navRef.current) {
+  //       const navbarHeight = navRef.current.getBoundingClientRect().height;
+  //       document.body.style.paddingTop = `${navbarHeight}px`;
+  //     }
+  //   };
 
-    // Adjust padding on load
-    adjustBodyPadding();
+  //   // Adjust padding on load
+  //   adjustBodyPadding();
 
-    // Adjust padding on window resize
-    window.addEventListener("resize", adjustBodyPadding);
+  //   // Adjust padding on window resize
+  //   window.addEventListener("resize", adjustBodyPadding);
 
-    return () => {
-      window.removeEventListener("resize", adjustBodyPadding);
-      document.body.style.paddingTop = ""; // Reset padding on cleanup
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", adjustBodyPadding);
+  //     document.body.style.paddingTop = ""; // Reset padding on cleanup
+  //   };
+  // }, []);
 
   useEffect(() => {
     const handleScroll = () => {

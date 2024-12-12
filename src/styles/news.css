@@ -126,6 +126,7 @@
   .news > h1 {
     /* font-family: 'Outfit'; */
     font-size: 60px;
+    padding: 0 16px;
     /* text-align: center; */
   }
   
