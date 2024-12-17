@@ -1,7 +1,7 @@
 /* .homepage {
 } */
 .homepage .top {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   background: url('../assets/images/background/Desktop-1.webp');
@@ -83,7 +83,7 @@
     rgba(255, 255, 255, 0.12) 93.74%
   );
   backdrop-filter: blur(10px);
-  padding: 1em;
+  padding: 2em;
   flex-shrink: 0;
   position: relative;
   margin-top: 0em;
@@ -99,6 +99,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 200px 0px;
   /* background: red; */
 }
 .homepage .top .info .moreIf p {
