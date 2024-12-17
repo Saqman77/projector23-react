@@ -86,7 +86,7 @@
   padding: 1em;
   flex-shrink: 0;
   position: relative;
-  margin-top: 3em;
+  margin-top: 0em;
   margin-right: 2em;
   /* animation: fadeIn forwards ease-in-out 2s 3s; */
   margin-left: 1em;
@@ -140,7 +140,7 @@
   width: 72%;
   height: 260px;
   margin: 0 auto;
-  margin-top: 6.5em;
+  margin-top: 90px;
   border-radius: 30px;
   overflow: hidden; /* Hide anything outside the container */
   position: relative;
@@ -186,7 +186,7 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 16px;
-  margin-top: 1em;
+  /* margin-top: 1em; */
 }
 .homepage .more_content h1.ourteam {
   color: #A1E7F9;
@@ -201,7 +201,7 @@
 }
 .homepage .more_content .our_team .mber {
   width: calc((100% / 4) - 3em);
-  margin: 3.5em 1.5em;
+  margin: 0 1.5em 3em;
   position: relative;
 }
 .homepage .more_content .our_team .mber p {
@@ -223,9 +223,9 @@
 
 .homepage .more_content .our_team .mber .img {
   /* width: 300px; */
-  background: #7f3e98;
+  /* background: #7f3e98; */
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
   flex-shrink: 0;
   border-radius: 20px;
   margin: 14px 0;
@@ -492,7 +492,7 @@
   .homepage .top .info h1 {
     font-size: 100px;
     font-weight: 700;
-    line-height: 90px;
+    line-height: 0.75em;
     
     letter-spacing: -4px;
   }
@@ -503,7 +503,7 @@
   .homepage .top .info .moreIf p {
     font-size: 25px;
     font-weight: 400;
-    line-height: 1.8;
+    line-height: normal;
     letter-spacing: -0.32px;
   }
   .homepage .more_content .image-container {
@@ -512,9 +512,10 @@
   .homepage .more_content h1.ourteam {
     font-size:90px;
     font-weight: 1000;
-    /* line-height: 1.8; */
+    line-height: 0.75;
     letter-spacing: -1.68px;
-    margin-top: 1em;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 
 
@@ -525,7 +526,7 @@
     line-height: 1.4;
   }
   .homepage .more_content .our_team .mber .img {
-    height: 500px;
+    /* height: 500px; */
     border-radius: 20px;
     margin: 14px 0;
   }
@@ -554,7 +555,7 @@
     letter-spacing: -0.32px;
   }
   .homepage .more_content .our_team .mber .img {
-    height: 250px;
+    /* height: 250px; */
     border-radius: 20px;
     margin: 14px 0;
   }
